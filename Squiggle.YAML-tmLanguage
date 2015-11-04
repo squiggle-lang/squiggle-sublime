@@ -1,0 +1,61 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Squiggle
+scopeName: source.squiggle
+fileTypes: [sqg]
+uuid: 0997babf-edad-4eb9-914a-a36a76573b98
+
+patterns:
+- comment: Comment
+  name: comment.line.number-sign
+  match: "#.*\n"
+
+- comment: Number
+  name: constant.numeric.squiggle
+  match: "([0-9][0-9_]*)(\\.([0-9+]))?"
+
+- comment: Braces
+  name: meta.brace.squiggle
+  match: '[\[\](){}]'
+
+- comment: Delimiters
+  name: meta.delimiter.squiggle
+  match: '(,|:|\.)'
+
+- comment: Operator
+  name: keyword.operator.squiggle
+  match: '(\+\+|~|\+|-|\*|/|=>|<=|>=|>|<|==|!=|=)'
+
+- comment: Named Operator
+  name: keyword.operator.squiggle
+  match: '\b(|has|is|not|and|or)\b'
+
+- comment: Boolean
+  name: constant.language.boolean.squiggle
+  match: '\b(true|false)\b'
+
+- comment: Other Named Constants
+  name: constant.language.squiggle
+  match: '\b(undefined|null|global)\b'
+
+- comment: Infinity or NaN
+  name: constant.numeric.squiggle
+  match: '\b(Infinity|NaN)\b'
+
+- comment: Keyword
+  name: keyword.control.squiggle
+  match: '\b(exporty|try|throw|error|fn|if|then|else|match|case|end|let|def|in|await|require)\b'
+
+- comment: String
+  name: string.quoted.double.squiggle
+  begin: '"'
+  end: '"'
+  patterns:
+    - comment: Basic Escaped Character
+      name: constant.character.escape.squiggle
+      match: '\\[nrt"]'
+    - comment: Unicode Escaped Character
+      name: constant.character.escape.squiggle
+      match: '\\u{[0-9a-fA-F]+}'
+    - comment: Character
+      match: '[^\\"]'
