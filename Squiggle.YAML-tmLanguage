@@ -28,7 +28,7 @@ patterns:
 
 - comment: Named Operator
   name: keyword.operator.squiggle
-  match: '\b(|has|is|not|and|or)\b'
+  match: '\b(has|is|not|and|or)\b'
 
 - comment: Boolean
   name: constant.language.boolean.squiggle
