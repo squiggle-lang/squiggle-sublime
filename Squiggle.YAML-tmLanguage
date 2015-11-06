@@ -44,7 +44,7 @@ patterns:
 
 - comment: Keyword
   name: keyword.control.squiggle
-  match: '\b(exporty|try|throw|error|fn|if|then|else|match|case|end|let|def|in|await|require)\b'
+  match: '\b(export|try|throw|error|fn|if|then|else|match|case|end|let|def|in|await|require)\b'
 
 - comment: String
   name: string.quoted.double.squiggle
