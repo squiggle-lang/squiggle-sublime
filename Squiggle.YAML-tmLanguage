@@ -47,7 +47,7 @@ patterns:
   match: '\b(Infinity|NaN)\b'
 
 - comment: Function definition
-  match: '(def) ([a-zA-Z_][a-zA-Z0-9_]*)(\()([a-zA-Z0-9_, ]*)(\))'
+  match: '(def)\s+([a-zA-Z_][a-zA-Z0-9_]*)\s*(\()([a-zA-Z0-9_,\s]*)\s*(\))'
   captures:
     "1": {name: keyword.control.squiggle}
     "2": {name: entity.name.function.squiggle}
