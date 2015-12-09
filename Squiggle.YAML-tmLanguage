@@ -10,6 +10,10 @@ patterns:
   name: comment.line.number-sign
   match: "#.*\n"
 
+- comment: Comment EOF
+  name: comment.line.number-sign
+  match: "#.*$"
+
 - comment: Number
   name: constant.numeric.squiggle
   match: "([0-9][0-9_]*)(\\.([0-9+]))?"
@@ -18,13 +22,13 @@ patterns:
   name: meta.brace.squiggle
   match: '[\[\](){}]'
 
-- comment: Delimiters
-  name: meta.delimiter.squiggle
-  match: '(,|:|\.)'
-
 - comment: Operator
   name: keyword.operator.squiggle
-  match: '(\+\+|~|\+|-|\*|/|=>|<=|>=|>|<|==|!=|=)'
+  match: '(\+\+|~|\+|\.\.|-|\*|/|=>|<=|>=|>|<|==|!=|=)'
+
+- comment: Delimiters
+  name: meta.delimiter.squiggle
+  match: '(,|:|;|\.)'
 
 - comment: Named Operator
   name: keyword.operator.squiggle
@@ -44,7 +48,7 @@ patterns:
 
 - comment: Keyword
   name: keyword.control.squiggle
-  match: '\b(export|try|throw|error|fn|if|then|else|match|case|end|let|def|in|await|require)\b'
+  match: '\b(export|try|throw|error|fn|if|then|elseif|else|match|case|end|let|def|in|await|require)\b'
 
 - comment: String
   name: string.quoted.double.squiggle

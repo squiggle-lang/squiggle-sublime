@@ -1,0 +1,9 @@
+# [PackageDev] target_format: plist, ext: tmPreferences
+---
+name: Comments
+uuid: A01F9C51-45C5-4B8F-84DB-BFFA94533825
+scope: "source.squiggle"
+settings:
+  shellVariables:
+  - name: TM_COMMENT_START
+    value: '# '
