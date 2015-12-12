@@ -123,7 +123,7 @@
 			<key>comment</key>
 			<string>Function definition</string>
 			<key>match</key>
-			<string>(def)\s+([a-zA-Z_][a-zA-Z0-9_]*)\s*(\()([a-zA-Z0-9_,\s]*)(\))</string>
+			<string>(def)\s+([a-zA-Z_][a-zA-Z0-9_]*)\s*(\()([a-zA-Z0-9_,@\.\s]*)(\))</string>
 		</dict>
 		<dict>
 			<key>captures</key>
