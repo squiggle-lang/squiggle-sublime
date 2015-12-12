@@ -152,7 +152,7 @@
 			<key>comment</key>
 			<string>Anonymous function</string>
 			<key>match</key>
-			<string>(fn)\s*(\()([a-zA-Z0-9_,\s]*)(\))</string>
+			<string>(fn)\s*(\()([a-zA-Z0-9_,@\.\s]*)(\))</string>
 		</dict>
 		<dict>
 			<key>comment</key>

@@ -56,7 +56,7 @@ patterns:
     "5": {name: meta.delimiter.squiggle}
 
 - comment: Anonymous function
-  match: '(fn)\s*(\()([a-zA-Z0-9_,\s]*)(\))'
+  match: '(fn)\s*(\()([a-zA-Z0-9_,@\.\s]*)(\))'
   captures:
     "1": {name: keyword.control.squiggle}
     "2": {name: meta.delimiter.squiggle}
