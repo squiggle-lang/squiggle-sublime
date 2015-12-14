@@ -158,7 +158,7 @@
 			<key>comment</key>
 			<string>Keyword</string>
 			<key>match</key>
-			<string>\b(export|try|throw|error|fn|if|then|elseif|else|match|case|end|let|def|in|await|require)\b</string>
+			<string>\b(export|try|throw|error|fn|if|then|elseif|else|match|case|do|end|let|def|in|await|require)\b</string>
 			<key>name</key>
 			<string>keyword.control.squiggle</string>
 		</dict>
